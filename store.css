@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.container {
+    width: 85%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cart Button Start */
+.cart-button {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #ff6b6b; /* Background color */
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #333; /* Set to a darker color instead of white */
+    text-decoration: none; /* Remove underline from link */
+}
+
+.cart-button:hover {
+    background-color: #e55b5b; /* Hover background color */
+}
+
+.cart-button .cart-count {
+    margin-left: 0.5rem;
+    font-weight: bold;
+}
+/* Cart Button End */
+
+/* Product Section Start*/
+.section-products {
+    padding: 2rem 0;
+}
+
+#productContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+    gap: 2rem; 
+}
+
+.section-common-heading {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bold;
+}
+
+.cards {
+    background-color: #f8f8f8;
+    border-radius: 10px;
+    box-shadow: 2px 6px 12px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem;
+    text-align: center;
+    flex: 1 1 calc(25% - 2rem); 
+    max-width: calc(25% - 2rem);
+    margin-bottom: 2rem;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: space-between; 
+}
+
+.productImage {
+    max-width: 150px;
+    max-height: 150px; /* Set height for uniformity */
+    object-fit: cover; /* Maintain aspect ratio */
+    margin-bottom: 1rem;
+}
+
+.cards img {
+    max-width: 150px;
+    margin-bottom: 1rem;
+}
+
+.productName {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.productDescription {
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.productName,
+.productDescription {
+    margin: 0.5rem 0; /* Consistent vertical spacing */
+}
+
+.productPriceElement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.productPrice {
+    font-size: 1.5rem;
+    color: #ff6b6b;
+}
+
+.productActualPrice {
+    font-size: 1rem;
+    text-decoration: line-through;
+    color: #999;
+}
+
+.productRating i {
+    color: #ffcc00;
+}
+
+.productQuantityElement {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.stockElement {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.cartIncrement, .cartDecrement {
+    background-color: #ddd;
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cartIncrement:hover{
+    background-color: #c3bfbf
+}
+
+.cartDecrement:hover {
+    background-color: #c3bfbf
+}
+
+.add-to-cart-button {
+    background-color: #ff6b6b;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    text-decoration: none;
+    border: none;
+}
+
+.add-to-cart-button:hover {
+    background-color: #e55b5b;
+}
+/* Product Section End*/
